@@ -1,0 +1,111 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #ff6347;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600; /* Added font weight for emphasis */
+}
+
+form {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  transition: transform 0.3s ease-in-out;
+  border: 1px solid #ddd; /* Added subtle border */
+}
+
+form:hover {
+  transform: scale(1.02);
+}
+
+label {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+  font-weight: 500; /* Added font weight for better readability */
+}
+
+input, button {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: #fafafa;
+  transition: border-color 0.3s, background-color 0.3s;
+  box-sizing: border-box; /* Ensures padding doesn't affect input width */
+}
+
+input:focus, button:focus {
+  border-color: #ff6347;
+  background-color: #fff;
+  outline: none;
+}
+
+input[type="submit"], button {
+  background-color: #ff6347;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  border: none; /* Removing border for buttons */
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #e55347;
+}
+
+.error {
+  color: #ff4c4c;
+  font-size: 0.9em;
+  margin-top: -8px; /* Reduce space between error and input */
+}
+
+form p {
+  text-align: center;
+  font-size: 1.2em;
+  color: #4CAF50;
+  margin-top: 20px;
+  font-weight: 500; /* Make the success message slightly bolder */
+}
+
+/* Added a subtle box-shadow effect on inputs */
+input[type="text"], input[type="email"], input[type="date"], input[type="time"], input[type="number"] {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 90%;
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  input, button {
+    font-size: 1.1em; /* Make the input fields slightly bigger on smaller screens */
+  }
+}
